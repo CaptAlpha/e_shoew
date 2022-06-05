@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1266495501",
+    "project_id": "eshoew",
+    "storage_bucket": "eshoew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1266495501:android:cc3d67bfaf225ed9dbe544",
+        "android_client_info": {
+          "package_name": "com.example.e_shoew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1266495501-ed3a02kvp360agotds0sk9af57utrvhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjiTsbBIpg_fu1NSddsk0kU1RGGumz-2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1266495501-ed3a02kvp360agotds0sk9af57utrvhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
