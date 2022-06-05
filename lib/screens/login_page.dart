@@ -34,8 +34,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Column(
                 children: [
-                  CustomInput(),
-                  CustomInput(),
+                  CustomInput(
+                    hintText: "Email",
+                  ),
+                  CustomInput(
+                    hintText: "Password",
+                  ),
                   CustomBtn(
                       text: "Login",
                       onPressed: () {
