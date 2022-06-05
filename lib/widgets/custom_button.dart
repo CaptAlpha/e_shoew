@@ -8,8 +8,12 @@ class CustomBtn extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final bool outlineBtn;
+  final bool isLoading;
   const CustomBtn(
-      {required this.text, required this.onPressed, this.outlineBtn = false});
+      {required this.text,
+      required this.onPressed,
+      this.outlineBtn = false,
+      this.isLoading = false});
 
   @override
   Widget build(BuildContext context) {

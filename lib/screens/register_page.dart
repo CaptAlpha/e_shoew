@@ -37,6 +37,24 @@ class _RegisterPageState extends State<RegisterPage> {
 
   bool _isLoading = false;
 
+  //Form Input Fields
+
+  String registerEmail = '';
+  String registerPassword = '';
+
+  //FocusNode
+  late FocusNode passwordFocusNode;
+
+  void initState() {
+    super.initState();
+    passwordFocusNode = FocusNode();
+  }
+
+  void dispose() {
+    passwordFocusNode.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,9 +76,27 @@ class _RegisterPageState extends State<RegisterPage> {
                 children: [
                   CustomInput(
                     hintText: "Email",
+                    onChanged: (value) {
+                      registerEmail = value;
+                    },
+                    onSubmit: (value) {
+                      passwordFocusNode.requestFocus();
+                    },
+                    focusNode: FocusNode(),
+                    textInputAction: TextInputAction.next,
+                    isPassword: false,
                   ),
                   CustomInput(
                     hintText: "Password",
+                    onChanged: (value) {
+                      registerPassword = value;
+                    },
+                    onSubmit: (value) {
+                      passwordFocusNode.unfocus();
+                    },
+                    focusNode: passwordFocusNode,
+                    textInputAction: TextInputAction.done,
+                    isPassword: true,
                   ),
                   CustomBtn(
                     text: "Create",
